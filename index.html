@@ -1,0 +1,270 @@
+# コーポレートサイト（トップページ）
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>〇〇株式会社</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    color:#333;
+    line-height:1.7;
+}
+
+header{
+    background:#0d47a1;
+    color:#fff;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600");
+    background-size:cover;
+    background-position:center;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:48px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+h2{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#f8f8f8;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,table td{
+    border:1px solid #ddd;
+    padding:15px;
+}
+
+table th{
+    background:#f0f0f0;
+    width:25%;
+}
+
+.news{
+    list-style:none;
+}
+
+.news li{
+    padding:15px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.contact{
+    text-align:center;
+}
+
+.button{
+    display:inline-block;
+    background:#0d47a1;
+    color:white;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:20px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>〇〇株式会社</h1>
+
+<nav>
+<a href="#">ホーム</a>
+<a href="#">会社概要</a>
+<a href="#">事業内容</a>
+<a href="#">お知らせ</a>
+<a href="#">お問い合わせ</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+<h2>未来を支える技術と信頼</h2>
+<p>お客様とともに成長する企業を目指します。</p>
+</div>
+
+</section>
+
+<section>
+
+<h2>事業内容</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>システム開発</h3>
+<p>業務効率化を実現するシステムをご提案します。</p>
+</div>
+
+<div class="card">
+<h3>ITコンサルティング</h3>
+<p>DX推進や業務改善をご支援いたします。</p>
+</div>
+
+<div class="card">
+<h3>保守・運用</h3>
+<p>安心してご利用いただけるサポート体制を整えています。</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>会社概要</h2>
+
+<table>
+
+<tr>
+<th>会社名</th>
+<td>〇〇株式会社</td>
+</tr>
+
+<tr>
+<th>所在地</th>
+<td>東京都○○区○○1-2-3</td>
+</tr>
+
+<tr>
+<th>代表者</th>
+<td>山田 太郎</td>
+</tr>
+
+<tr>
+<th>設立</th>
+<td>2025年4月</td>
+</tr>
+
+<tr>
+<th>資本金</th>
+<td>1,000万円</td>
+</tr>
+
+<tr>
+<th>従業員数</th>
+<td>20名</td>
+</tr>
+
+</table>
+
+</section>
+
+<section>
+
+<h2>お知らせ</h2>
+
+<ul class="news">
+<li>2026.07.01　ホームページを公開しました。</li>
+<li>2026.06.15　新サービスを開始しました。</li>
+<li>2026.05.10　採用情報を更新しました。</li>
+</ul>
+
+</section>
+
+<section class="contact">
+
+<h2>お問い合わせ</h2>
+
+<p>
+お気軽にお問い合わせください。
+</p>
+
+<a class="button" href="mailto:info@example.co.jp">
+お問い合わせはこちら
+</a>
+
+</section>
+
+<footer>
+
+<p>〒100-0000 東京都○○区○○1-2-3</p>
+
+<p>TEL：03-1234-5678</p>
+
+<p>Email：info@example.co.jp</p>
+
+<p style="margin-top:15px;">
+© 2026 〇〇株式会社 All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
+```
